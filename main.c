@@ -2,12 +2,15 @@
 #include <stdlib.h>
 #include <time.h>
 
-void degistirme(char dizi[],char degistirilen,char yerinegelecek){
-    int i=0;
+void degistirme(char dizi[], char degistirilen, char yerinegelecek)
+{
+    int i = 0;
 
-    while(dizi[i]!='\0'){
-        if(dizi[i]==degistirilen){
-            dizi[i]=yerinegelecek;
+    while (dizi[i] != '\0')
+    {
+        if (dizi[i] == degistirilen)
+        {
+            dizi[i] = yerinegelecek;
         }
         i++;
     }
@@ -15,9 +18,9 @@ void degistirme(char dizi[],char degistirilen,char yerinegelecek){
 
 int main()
 {
-    char metin[]="SELIM";
+    char metin[] = "SELIM";
 
-    degistirme(metin,'S','e');
+    degistirme(metin, 'S', 'e');
 
-    printf("%s",metin);
+    printf("%s", metin);
 }
